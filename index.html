@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sprout - Stop Searching,Start Sprouting!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 40px;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar a.active {
+      background-color: #666;
+      color: white;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .side {
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .main {
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
+
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Sprout</h1>
+  <p>Accelerate your green career search by 2x</p>
+</div>
+
+<div class="navbar">
+ <a href="#" class="active">Home</a>
+ <a href="#" class="right">Login</a>
+ <!-- Add links for each section in the header -->
+ <a href="WhySprouts.html">Why Sprout?</a>
+ <a href="successstories.html">Success Stories</a>
+ <a href="meetingarchieve.html">Meeting Archieves</a>
+ <a href="resources.html">Resources</a>
+ <a href="OpportunityMap.html">Opportunities Map</a>
+ <a href="connect.html">Connect</a>
+ <a href="trendsingreen.html">Green Highlight</a>
+ <a href="aboutus.html">About Us</a>
+ </div>
+
+<div class="row">
+  <div class="side">
+    <h2>The Ultimate Green Career Community for Tier 2 Students</h2>
+    <ul>
+      <li>Personalized map to your ideal green career</li>
+      <li>80% higher match rate with green jobs based on your interests</li>
+      <li>Streamlined job hunt across India, filtering opportunities by location and interest</li>
+      <li>Monthly mentorship sessions with industry experts and peers</li>
+      <li>Curated resources and success stories specifically for Tier 2 students</li>
+    </ul>
+    <h3>Testimonials</h3>
+    <p>"Sprout helped me find my dream job in the green sector. I learned so much from the mentors and the community. Thank you Sprout!" - Ravi, Solar Engineer</p>
+    <p>"I was struggling to find a green job that matched my skills and interests. Sprout made it easy for me to discover and apply for opportunities in my area. I highly recommend Sprout to anyone looking for a green career." - Priya, Environmental Consultant</p>
+    <p>"Sprout is an amazing platform for Tier 2 students who want to pursue a green career. I got to network with like-minded peers and experts, and access valuable resources and tips. Sprout is a game-changer for the green sector in India." - Amit, Sustainable Fashion Designer</p>
+  </div>
+  <div class="main">
+    <br>
+    <h2>How Sprout can help you</h2>
+    <p>Sprout is a platform that connects Tier 2 students with green jobs and careers. Sprout helps you discover your ideal green career path, find relevant opportunities, and learn from experts and peers. Sprout also provides you with curated resources and success stories to inspire and guide you along your green journey.</p>
+    <p>Whether you're interested in energy, agriculture, construction, manufacturing, transportation, waste management, policy, research, or consulting, Sprout has something for you. Sprout covers all the green sector fields and offers you a variety of work preferences, positions, and stipends. Sprout also lets you filter opportunities by location, so you can find the best fit for you.</p>
+    <p>With Sprout, you can accelerate your green career search by 2x. Stop searching, start Sprouting!</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Contact us: sprout@gmail.com | Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+</div>
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- JavaScript for smooth scrolling -->
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
